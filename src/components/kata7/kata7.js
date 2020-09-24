@@ -127,6 +127,7 @@ const Kata7 = (props) => {
               variant="contained"
               color="primary"
               className={classes.submit}
+              id="btn"
             >
               {view ? "Sign In" : "Sign Up"}
             </Button>
@@ -134,7 +135,7 @@ const Kata7 = (props) => {
               <Grid item xs>
                 {view ? (
                   <Redirect to="/main">
-                    <Link href="#" variant="body2">
+                    <Link href="#" variant="body2" id="guess">
                       Visitante
                     </Link>
                   </Redirect>
